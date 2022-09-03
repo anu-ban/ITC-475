@@ -1,0 +1,161 @@
+* {
+  margin:0;
+  padding:0;
+
+}
+/*Always design for mobile first*/
+body{
+  font-family:sans-serif;
+  margin:0 auto;/*Take cares of the white space's, so we can create and design*/
+}
+header{
+  text-align: center;
+  background-color: lightblue;
+}
+
+nav{
+  margin-top: 22px; /*My input on nav*/
+  background: black;
+}
+nav ul{
+  /*unordered list*/
+  display:flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+nav a{
+  color:white;
+  font-weight: bold;
+  display: block;
+  padding:10px;
+  text-decoration: none;
+}
+nav a:hover{
+  color: orange;
+}
+.intro{
+  padding:0 15px;
+  margin-top:30px;
+  margin-bottom: 5px;
+}
+.intro h1{
+  margin-bottom: 15px;
+}
+
+.intro p{
+  line-height: 1.5;
+}
+.picGrids{
+  margin:10px;
+}
+.gridPicture{
+  border:2px solid black;
+  padding:5px;
+  margin: 5px;
+}
+
+.gridPicture h2{
+  margin: 30px 5px 20px;
+
+}
+@keyframes picCardsAnimation{
+  from{
+    background-color:white;
+    color:black;
+    border-width: 5px;
+    padding:10px;
+  }
+  to{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    padding:10px;
+  }
+}
+.gridPicture:hover{
+  animation: picCardsAnimation 2s;
+}
+.gridPicture a{
+  padding:0px;
+  color: black;
+  font-size: large;
+  text-decoration: none;
+}
+.gridPicture img{
+  width:100%;
+}
+.original-price{
+  text-transform: uppercase;
+  color: gray;
+}
+.currentPrice{
+  text-transform: uppercase;
+  color:black;
+}
+.currentPrice span{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.saving{
+  color:green;
+}
+footer{
+  background-color: black;
+  margin: 5px;
+  padding:15px;
+}
+footer p{
+  color: white;
+}
+
+@media (min-width:768px){
+  header{
+    display:flex;
+    align-items:center;
+  }
+  .grayline{
+    padding:8px;
+    display:flex;
+    background: lightgray;
+  }
+  nav{
+  margin-top: 0px;
+  background: transparent;
+
+  }
+  nav ul{
+    display:flex;
+    /*Will flex with the display size*/
+    list-style: none;/*No */
+    align-items: center;
+    justify-content: center;
+    
+  }
+  nav a{
+    margin-top: 0%;
+    color: black;
+    position:relative;
+    text-decoration: none;
+    top:0;
+    transition: top 0.5s, color 0.5s;
+  }
+  nav a:hover{
+    color: red;
+    top:8px;
+    
+  }
+  .picGrids{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    padding:10px;
+  }
+  .gridPicture{
+    display: inline;
+
+  }
+  .gridPicture img{
+    height: auto;
+  }
+}
