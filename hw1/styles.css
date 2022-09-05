@@ -14,7 +14,7 @@ header{
 }
 
 nav{
-  margin-top: 22px; /*My input on nav*/
+  margin-top: 0px; /*My input on nav*/
   background: black;
 }
 nav ul{
@@ -47,41 +47,49 @@ nav a:hover{
   line-height: 1.5;
 }
 .picGrids{
-  margin:10px;
+  margin-top:10px;
 }
 .gridPicture{
-  border:2px solid black;
-  padding:5px;
-  margin: 5px;
+  
+  border:1px solid black;
+  padding:15px;
+  margin: 10px;
 }
 
 .gridPicture h2{
-  margin: 30px 5px 20px;
+  margin: 10px 5px 15px;
 
 }
+
+
 @keyframes picCardsAnimation{
   from{
+    color: black;
     background-color:white;
-    color:black;
-    border-width: 5px;
+    
+    border-width: 1px;
     padding:10px;
   }
+
   to{
     background-color: black;
-    color: white;
+    color:white;
+    
     border-width: 5px;
-    padding:10px;
+    padding:15px;
+ 
   }
 }
 .gridPicture:hover{
-  animation: picCardsAnimation 2s;
+  animation:picCardsAnimation 2s ease;
+  
 }
 .gridPicture a{
-  padding:0px;
   color: black;
-  font-size: large;
   text-decoration: none;
 }
+
+
 .gridPicture img{
   width:100%;
 }
@@ -96,13 +104,13 @@ nav a:hover{
 .currentPrice span{
   color: black;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .saving{
   color:green;
 }
 footer{
-  background-color: black;
+  background: black;
   margin: 5px;
   padding:15px;
 }
@@ -142,9 +150,13 @@ footer p{
     transition: top 0.5s, color 0.5s;
   }
   nav a:hover{
-    color: red;
+    color: orange;
     top:8px;
     
+  }
+  .intro{
+    width: 50%;
+
   }
   .picGrids{
     display:grid;
