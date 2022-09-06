@@ -1,162 +1,207 @@
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 
 }
+
 /*Always design for mobile first*/
-body{
-  font-family:sans-serif;
-  margin:0 auto;/*Take cares of the white space's, so we can create and design*/
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  /*Take cares of the white space's, so we can create and design*/
 }
-header{
+
+header {
   text-align: center;
   background-color: lightblue;
 }
 
-nav{
-  margin-top: 0px; /*My input on nav*/
+nav {
+  margin-top: 0px;
+  /*My input on nav*/
   background: black;
 }
-nav ul{
+
+nav ul {
   /*unordered list*/
-  display:flex;
+  display: flex;
   list-style: none;
   align-items: center;
   justify-content: center;
 }
-nav a{
-  color:white;
+/*Mobile 1st*/
+nav a {
+  color: white;
   font-weight: bold;
   display: block;
-  padding:10px;
+  padding: 10px;
   text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
   color: orange;
 }
-.intro{
-  padding:0 15px;
-  margin-top:30px;
+
+.intro {
+  padding: 0 15px;
+  margin-top: 30px;
   margin-bottom: 5px;
 }
-.intro h1{
+
+.intro h1 {
   margin-bottom: 15px;
 }
 
-.intro p{
+.intro p {
   line-height: 1.5;
 }
-.picGrids{
-  margin-bottom:20px;
+
+.picGrids {
+  margin-bottom: 20px;
 }
-.gridPicture{
-  
-  border:1px solid black;
-  padding:15px;
+
+.gridPicture {
+
+  border: 1px solid black;
+  padding: 15px;
   margin: 10px;
 }
 
+/*About Us Intro Page*/
+.introAboutUs {
+  padding: 0 15px;
+  margin-top: 30px;
+  margin-bottom: 320px;
+}
+
+.introAboutUs h1 {
+  margin-bottom: 15px;
+}
+
+.introAboutUs p {
+  line-height: 1.5;
+}
 
 
 
 
-@keyframes picAnimation{
-  from{
-    background-color:white;
+
+@keyframes picAnimation {
+  from {
+    background-color: white;
     color: black;
     border-width: 1px;
-    padding:10px;
+    padding: 10px;
   }
 
-  to{
+  to {
     background-color: black;
-    color:white;
+    color: white;
     border-width: 5px;
-    padding:8px; 
+    padding: 8px;
   }
 }
-.gridPicture:hover{
-  animation: picAnimation 2s ;
-  
+
+.gridPicture:hover {
+  animation: picAnimation 2s;
+
 }
-.gridPicture h2,a{
+
+.gridPicture h2,
+a {
   color: black;
   font-size: 20px;
   text-decoration: none;
 }
-.gridPicture h2,a:hover{
+
+.gridPicture h2,
+a:hover {
   color: white;
 }
-.gridPicture img{
-  width:100%;
+
+.gridPicture img {
+  width: 100%;
 }
-.original-price{
+
+.original-price {
   text-transform: uppercase;
   color: gray;
 }
-.currentPrice{
+
+.currentPrice {
   text-transform: capitalize;
-  color:black;
+  color: black;
 }
 
-.saving{
-  color:green;
+.saving {
+  color: green;
 }
-footer{
+
+footer {
   background: black;
   margin: 5px;
-  padding:15px;
+  padding: 15px;
 }
-footer p{
+
+footer p {
   color: white;
 }
 
-@media (min-width:768px){
-  header{
-    display:flex;
-    align-items:center;
+@media (min-width:768px) {
+  header {
+    display: flex;
+    align-items: center;
   }
-  .grayline{
-    padding:8px;
-    display:flex;
+
+  .grayline {
+    padding: 8px;
+    display: flex;
     background: lightgray;
   }
-  nav{
-  margin-top: 0px;
-  background: transparent;
+
+  nav {
+    margin-top: 0px;
+    background: transparent;
 
   }
-  nav ul{
-    display:flex;
+
+  nav ul {
+    display: flex;
     /*Will flex with the display size*/
-    list-style: none;/*No */
+    list-style: none;
+    /*No */
     align-items: center;
     justify-content: center;
-    
+
   }
-  nav a{
+
+  nav a {
     margin-top: 0%;
     color: black;
-    position:relative;
+    position: relative;
     text-decoration: none;
-    top:0;
+    top: 0;
     transition: top 0.5s, color 0.5s;
   }
-  nav a:hover{
+
+  nav a:hover {
     color: red;
-    top:8px;
-    
+    top: 8px;
+
   }
-  .intro{
+
+  .intro {
     width: 50%;
 
   }
-  .picGrids{
-    display:grid;
+
+  .picGrids {
+    display: grid;
     grid-template-columns: auto auto auto auto;
-    padding:10px;
+    padding: 10px;
   }
-  .gridPicture{
+
+  .gridPicture {
     display: inline;
 
   }
