@@ -47,7 +47,7 @@ nav a:hover{
   line-height: 1.5;
 }
 .picGrids{
-  margin-top:10px;
+  margin-bottom:20px;
 }
 .gridPicture{
   
@@ -56,17 +56,14 @@ nav a:hover{
   margin: 10px;
 }
 
-.gridPicture h2{
-  margin: 10px 5px 15px;
-
-}
 
 
-@keyframes picCardsAnimation{
+
+
+@keyframes picAnimation{
   from{
-    color: black;
     background-color:white;
-    
+    color: black;
     border-width: 1px;
     padding:10px;
   }
@@ -74,22 +71,22 @@ nav a:hover{
   to{
     background-color: black;
     color:white;
-    
     border-width: 5px;
-    padding:15px;
- 
+    padding:8px; 
   }
 }
 .gridPicture:hover{
-  animation:picCardsAnimation 2s ease;
+  animation: picAnimation 2s ;
   
 }
-.gridPicture a{
+.gridPicture h2,a{
   color: black;
+  font-size: 20px;
   text-decoration: none;
 }
-
-
+.gridPicture h2,a:hover{
+  color: white;
+}
 .gridPicture img{
   width:100%;
 }
@@ -98,14 +95,10 @@ nav a:hover{
   color: gray;
 }
 .currentPrice{
-  text-transform: uppercase;
+  text-transform: capitalize;
   color:black;
 }
-.currentPrice span{
-  color: black;
-  font-weight: bold;
-  text-decoration: underline;
-}
+
 .saving{
   color:green;
 }
@@ -150,7 +143,7 @@ footer p{
     transition: top 0.5s, color 0.5s;
   }
   nav a:hover{
-    color: orange;
+    color: red;
     top:8px;
     
   }
@@ -167,7 +160,5 @@ footer p{
     display: inline;
 
   }
-  .gridPicture img{
-    height: auto;
-  }
+
 }
