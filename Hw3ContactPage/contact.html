@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial=scale=1"/>
+        <title>Mega Travel</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="img/mega travel logo.png" height="200px" alt="logo"/>
+        </header>
+        <section class="grayline">
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Agent</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="intro">
+            <h1>Contact an Agent</h1>
+            <p>We would love to know more about yoour travel plans. Please fill out this contact form to get in touch with a travel agent.</p>
+        </section>
+        <section>
+            <link rel="stylesheet" href="contact.css"/>
+
+            <h1 class="title center">Contact</h1>
+            <div class="box">
+                <form action="" method="post">
+                    <div class="formrow">
+                        <label class="bold">Destination:</label>
+                        <select name="destinations" id="destinations" class="inp" onchange="activities()">
+                            <option value="" selected disabled>Select a destination...</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Maldives, South Asia">Maldives, South Asia</option>
+                            <option value="Venice, Italy">Venice, Italy</option>
+                            <option value="Cacun">Cacun</option>
+                        </select>
+                    </div>
+                    <div class="formrow" id="activities">
+
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright Protected. All rights reserved.</p>
+            <p>MEGA TRAVELS</p>
+            <p>megatv.com</p>
+        </footer>
+
+    </body>
+    <script src="contact.js"></script>
+
+</html>
