@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .box {
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        th,
+        td {
+            padding: 5px;
+        }
+        
+        .inp {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+        }
+        
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 1px solid blue;
+            background-color: #bbecff;
+            border-radius: 4px;
+        }
+        
+        .btn:hover {
+            background-color: #bbecff;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Smart Home Panel</h1>
+        <form action="simulation.php" method="post">
+
+            <table>
+                <tr>
+                    <th>Devices</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device1" onchange="active(1)" class="inp">
+                    <option value="" selected disabled>Select device</option>
+                    <option value="Living Room Lamp">Living Room Lamp</option>
+                </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start1" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end1" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device2" onchange="active(2)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Bedroom # 1 Desk Lamp">Bedroom # 1 Desk Lamp</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start2" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end2" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device3" onchange="active(3)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Bedroom # 2 Floor Lamp">Bedroom # 2 Floor Lamp</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start3" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end3" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device4" onchange="active(4)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Bathroom Fan">Bathroom Fan</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start4" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end4" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device5" onchange="active(5)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Front Door">Front Door</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start5" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end5" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device6" onchange="active(6)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Dryer">Dryer</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start6" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end6" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device7" onchange="active(7)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Back Door">Back Door</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start7" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end7" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device8" onchange="active(8)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Garage Door">Garage Door</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start8" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end8" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device9" onchange="active(9)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Kitchen Fan">Kitchen Fan</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start9" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end9" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device10" onchange="active(10)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Washer">Washer</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start10" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end10" disabled required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="device[]" id="device11" onchange="active(11)" class="inp">
+                            <option value="" selected disabled>Select device</option>
+                            <option value="Dining Room Light">Lamp</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="start[]" id="start11" disabled required>
+                    </td>
+                    <td>
+                        <input type="time" class="inp" name="end[]" id="end11" disabled required>
+                    </td>
+                </tr>
+            </table>
+            <div class="center">
+                <button type="submit" class="btn" name="smart">Start</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function active(num) {
+            document.getElementById('start' + num).disabled = false;
+            document.getElementById('end' + num).disabled = false;
+        }
+    </script>
+
+</html>
