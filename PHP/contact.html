@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width= device-width, initial-scale=1" />
+    <title>Mega Travel</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header><img src="images/logo.png" height="200px" alt="logo" />
+
+    </header>
+    <div class="separator"></div>
+    <div>
+        <!--Star of Nav link-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./home.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Agent</a></li>
+                <li><a href="./admin.php">Admin</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section>
+            <h1 class="title center">Contact</h1>
+            <div class="box">
+                <form action="confirmation.php" method="post" onsubmit="return validate()">
+                    <div class="formrow">
+                        <label class="bold">First Name:</label>
+                        <input type="text" name="fname" id="fname" class="inp" placeholder="Enter your first name...">
+                    </div>
+                    <div class="formrow">
+                        <label class="bold">Last Name:</label>
+                        <input type="text" name="lname" id="lname" class="inp" placeholder="Enter your last name...">
+                    </div>
+                    <div class="formrow">
+                        <label class="bold">Email:</label>
+                        <input type="email" name="email" id="email" class="inp" placeholder="Enter your email...">
+                    </div>
+                    <div class="formrow">
+                        <label class="bold">Phone number:</label>
+                        <input type="text" name="phone" id="phone" class="inp" placeholder="Enter your phone number...">
+                    </div>
+                    <div class="formrow">
+                        <label class="bold">Number of childern:</label>
+                        <input type="text" name="childern" id="childern" class="inp" placeholder="Enter number of childern...">
+                    </div>
+                    <div class="formrow">
+                        <label class="bold">Number of adults:</label>
+                        <input type="text" name="adults" id="adults" class="inp" placeholder="Enter number of adults...">
+                    </div>
+                    <div class="formrow">
+                        <label class="bold">Date of trip:</label>
+                        <input type="date" name="date" id="date" class="inp">
+                    </div>
+                    <div class="formrow">
+                        <label class="bold">Destination:</label>
+                        <select name="destinations" id="destinations" class="inp" onchange="activities()">
+                            <option value="" selected disabled>Select a destination...</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Maldives, South Asia">Maldives, South Asia</option>
+                            <option value="Venice, Italy">Venice, Italy</option>
+                            <option value="Cacun">Cacun</option>
+                        </select>
+                    </div>
+                    <div class="formrow" id="activities">
+
+                    </div>
+
+                    <div class="formrow center">
+                        <button type="reset" class="btn">Reset</button>
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>Footer</footer>
+</body>
+
+<script src="main.js"></script>
+
+</html>
