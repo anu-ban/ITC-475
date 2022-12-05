@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>The Race</title>
+</head>
+<body>
+    <div class="container">
+
+            <div class="choose_racers" id="choose_racers">
+                <div class="racers_container">
+                    <h3>Choose Two Racers</h3>
+                <div class="racers_image">
+                <figure onclick="chooseRacer(0)">
+                    <img src="./images/tortoise.jfif" alt="img" srcset="">
+                </figure>
+                <figure onclick="chooseRacer(1)">
+                    <img src="./images/rabbit.jfif" alt="img" srcset="">
+                </figure>
+                <figure onclick="chooseRacer(2)">
+                    <img src="./images/dog.jfif" alt="img" srcset="">
+                </figure>
+                <figure onclick="chooseRacer(3)">
+                    <img src="./images/cat.jfif" alt="img" srcset="">
+                </figure>
+
+                </div>
+                <div class="buttons">
+                    <button onclick="startRace()">Start Race</button>
+                    <a href="./stats.html">   <button >Check Stats</button></a>
+                </div>
+               
+
+            </div>
+            </div>
+            <div class="race_begin" id="race_begin">
+                <div class="start_container">
+                    <div class="light" id="light"></div>
+                    <button onclick="start()" id="start">Start</button>
+
+                </div>
+                <div class="race_container">
+                    <img src="./images/cat.jfif" alt="" id="racer1">
+                    <hr>
+                    <img src="./images/dog.jfif" alt="" id="racer2">
+                </div>
+                <div class="winner" id="winner">
+                    <img src="./images/cat.jfif"  id="winnerImg" alt="">
+                    <p id="winnerText">The winner is cat</p>
+                    <button id="reset" onclick="Reset()">Reset</button>
+                    
+                </div>
+                
+            </div>
+
+
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

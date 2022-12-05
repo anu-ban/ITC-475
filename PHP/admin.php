@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('connection.php');
+include('confirmation.php');
 $show = '';
 if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') {
     $sql = "SELECT * FROM `contact` ";

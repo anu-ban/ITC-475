@@ -1,5 +1,6 @@
 <?php
-$conn = mysqli_connect('localhost','root','mega_travels');
+$conn = mysqli_connect('localhost','root','','mega_travels');
 if (mysqli_connect_errno()) {
-    die('Can\'t Connect to database');
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    exit();
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stats</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="loadData()">
+    
+    <div class="stats_container">
+
+        <div class="search_container">
+            <input type="text" id="racer1" placeholder="Enter racer name 1...">
+            <input type="text" id="racer2"  placeholder="Enter racer name 2...">
+
+            <button onclick="search()">Search</button>
+
+        </div>
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Racer 1</th>
+                    <th>Racer 2</th>
+                    <th>Winner</th>
+                    <th>finish time</th>
+                    <th>Timestamps</th>
+
+
+                </tr>
+            </thead>
+            <tbody id="table_body">
+
+            </tbody>
+
+        </table>
+    </div>
+    <script src="./stats_script.js"></script>
+</body>
+</html>
